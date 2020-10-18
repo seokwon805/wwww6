@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="style.css" />
+	<title>
+         붉은돼지
+	</title>
+</head>
+<body>
+	<div class= 'blackbox'>
+	</div>
+
+	<div class= 'background'>
+	</div>
+
+    <div class="main">
+		<ul>
+			<li>붉</li>
+			<li>은</li>
+			<li>돼</li>
+			<li>지</li>
+		</ul>
+	</div>
+</body>
+</html>
+
+
+
+
+<style>
+.time {position:absolute;left:465px;transform:translate(-50%,-50%);}
+@keyframes watch {
+	0% {transform: translate(0);}
+	20% {transform: translate(-2px, 2px);}
+	40% {transform: translate(-2px, -2px);}
+	60% {transform: translate(2px, 2px);}
+	80% {transform: translate(2px, -2px);}
+	100% {transform: translate(0);}
+}
+@keyframes watch {
+	0% {transform: translate(0);}
+	20% {transform: translate(-2px, 2px);}
+	40% {transform: translate(-2px, -2px);}
+	60% {transform: translate(2px, 2px);}
+	80% {transform: translate(2px, -2px);}
+	100% {transform: translate(0);}
+}
+.time {
+	width:990px;
+	height:900px;
+	background:url('./image/pig.png') center center / 100% no-repeat;
+	animation: watch 1s linear infinite both;
+}
+
+.blackbox {
+	position: absolute;
+	width:100%;
+	height: 100%;
+	background-color: black;
+	display:block;
+}
+
+
+.background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1600px;
+    height: 1000px;
+    background: url('./image/background.jpg') no-repeat 50% 50%;
+    background-size: contain;
+    transform: translate(-50%,-50%);
+}
+</style>
+
+<div class="time"></div>
